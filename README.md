@@ -1,4 +1,4 @@
-#cli for getting package licences and github repos
+# cli for getting package licences and github repos
 
 To install the cli, use:
 
