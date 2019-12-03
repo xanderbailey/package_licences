@@ -129,6 +129,13 @@ def get_csv(requirement_dir, dest_dir):
 @click.argument('requirements_dir')
 @click.argument('csv_dir')
 def cli(requirements_dir,csv_dir):
+    """
+    CREATE CSV OF LICENCES AND GITHUB REPOSITORIES
+
+    \b
+    REQUIREMENTS_DIR: Path to txt file containing requirements
+    CSV_DIR: Path to csv file containing licences and github links
+    """
     click.echo('Generating CSV')
     _ = get_csv(requirements_dir,csv_dir)
 
