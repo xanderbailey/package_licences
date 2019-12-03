@@ -1,0 +1,4 @@
+Click
+pandas
+bs4
+requests

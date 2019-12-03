@@ -1,3 +1,4 @@
+import click
 import pandas as pd
 import requests
 
@@ -119,7 +120,18 @@ def get_csv(requirement_dir, dest_dir):
         rows.append(row)
 
     df = pd.DataFrame(rows)
-    df.columns = ["Package", "Version", "Licence", "URL", "Gitbub"]
+    df.columns = ["Package", "Version", "Licence", "URL", "Github"]
     df.to_csv(dest_dir)
 
     return df
+
+@click.command()
+@click.argument('requirements_dir')
+@click.argument('csv_dir')
+def cli(requirements_dir,csv_dir):
+    click.echo('Generating CSV')
+    _ = get_csv(requirements_dir,csv_dir)
+
+
+if __name__ == '__main__':
+    cli()

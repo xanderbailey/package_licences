@@ -1,0 +1,11 @@
+README.md
+setup.py
+packages_licences/__init__.py
+packages_licences.egg-info/PKG-INFO
+packages_licences.egg-info/SOURCES.txt
+packages_licences.egg-info/dependency_links.txt
+packages_licences.egg-info/entry_points.txt
+packages_licences.egg-info/requires.txt
+packages_licences.egg-info/top_level.txt
+packages_licences/scripts/__init__.py
+packages_licences/scripts/get_licences.py

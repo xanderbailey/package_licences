@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        get_licences=packages_licences.scripts.get_licences:cli
+    
