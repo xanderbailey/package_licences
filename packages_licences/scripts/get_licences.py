@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 
 from bs4 import BeautifulSoup
-
+from tqdm import tqdm
 
 def _get_licence(soup):
     """
@@ -84,7 +84,7 @@ def get_csv(requirement_dir, dest_dir):
         lines = [f.split("\n")[0] for f in file]
     packages = [line for line in lines if len(line.split("#")) == 1 and line != ""]
 
-    for package in packages:
+    for package in tqdm(packages):
         package_list = package.split("==")
 
         if len(package_list) == 2:
